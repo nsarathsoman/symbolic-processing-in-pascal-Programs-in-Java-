@@ -86,13 +86,13 @@ public class QuadrupleMarriagePuzzle {
         char[] men = new char[] {'A', 'B', 'C', 'D'};
         for(char E : men) {
             for(char F : men) {
-                //At a time two ladies cannot marry a man
+                //At a time two ladies cannot marry the same person
                 if(F == E) continue;
                 for(char G : men) {
-                    //At a time two ladies cannot marry a man
+                    //At a time two ladies cannot marry the same person
                     if(G == F || G == E) continue;
                     for(char H : men) {
-                        //At a time two ladies cannot marry a man
+                        //At a time two ladies cannot marry the same person
                         if(H == G || H == F || H == E) continue;
                         boolean p = (F == 'A'); //FA
                         boolean q = (G == 'C'); //GC
